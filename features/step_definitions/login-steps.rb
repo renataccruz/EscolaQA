@@ -9,7 +9,10 @@ Dado('que eu acesse a tela de login') do
   Dado('realizo login com {string} e {string}') do |email, senha|
     find("#email").set email
     find("#password").set senha
-    find("button", text: "Entrar").click
+    #find("button", text: "Entrar").click
+    btn = find_all("button", text: "Entrar")
+    btn[0].click
+
   end
   
   Então('estou logado com sucesso') do
