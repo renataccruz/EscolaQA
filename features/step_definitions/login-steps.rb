@@ -9,10 +9,9 @@ Dado('que eu acesse a tela de login') do
   Dado('realizo login com {string} e {string}') do |email, senha|
     find("#email").set email
     find("#password").set senha
-    find("button", text: "Aceitar").click
+    #find("button", text: "Aceitar").click
     btn = find_all("button", text: "Entrar")
     btn[0].click
-
   end
   
   Então('estou logado com sucesso') do
@@ -25,7 +24,7 @@ Dado('que eu acesse a tela de login') do
   end
 
   Dado('que eu acesse a tela de assinatura') do
-    find(:xpath, '//li[contains(@class, "styles__ListLink")]//a[text()="Assinatura"]').click
+    find(:xpath, '//li[contains(@class, "styles__ListLink")]//a[text()="Compra Programada"]').click
   end
   
   Quando('clique no botão entrar') do
@@ -34,8 +33,6 @@ Dado('que eu acesse a tela de login') do
     end
     
   Então('devo ser redirecionado para a tela de assinatura') do
-      sleep 5
       elemento = find("h2", text: "Sua conta")
       expect(elemento.visible?).to be true 
-      sleep 10
     end
