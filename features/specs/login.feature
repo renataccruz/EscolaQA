@@ -4,7 +4,7 @@ Funcionalidade: Login
   Cenario: Realizar login com sucesso
     Dado que eu acesse a tela de login
     E acesse a opção email e senha
-    E realizo login com "renata.cruz@cobasi.com.br" e "H@Salada23@H"
+    E realizo login com "renata.cruz@cobasi.com.br" e "Cobasi@123"
     Então estou logado com sucesso
 
   @login_assinatura
@@ -12,7 +12,7 @@ Funcionalidade: Login
     Dado que eu acesse a tela de assinatura
     Quando clique no botão entrar 
     E acesse a opção email e senha
-    E realizo login com "renata.cruz@cobasi.com.br" e "H@Salada23@H"
+    E realizo login com "renata.cruz@cobasi.com.br" e "Cobasi@123"
     Então devo ser redirecionado para a tela de assinatura 
     
 
