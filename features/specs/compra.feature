@@ -11,7 +11,7 @@ Funcionalidade: Compra de produto
     E selecione um produto
     E clicar em Adicionar ao Carrinho
     E clico em Ir para o carrinho
-    E seleciono o tipo de frete e prazo como "Economica"
+    E seleciono o tipo de frete e prazo como "Econômica"
     E finalizar a compra
     E clico em continuar para revisão
     E seleciono o "PIX" como metódo de pagamento

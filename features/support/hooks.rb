@@ -1,5 +1,12 @@
 Before do
   visit "./"
+  @HomePage = HomePage.new
+  @LoginPage = LoginPage.new
+  @CompraProgramadaPage = CompraProgramadaPage.new
+  @PlpPage = PlpPage.new
+  @PdpPage = PdpPage.new
+  @CarrinhoPage = CarrinhoPage.new
+  @CheckoutPage = CheckoutPage.new
   find("#adopt-accept-all-button").click
   # page.current_window.resize_to(1440, 900)
 end
