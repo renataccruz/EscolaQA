@@ -9,6 +9,8 @@ gem 'selenium-webdriver'
 
 gem 'allure-cucumber'
 
+gem 'report_builder'
+
 # gems para dados fakes
 gem 'cpf_cnpj', '0.5.0'
 gem 'faker', '2.17'

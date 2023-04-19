@@ -4,8 +4,9 @@ require_relative "helper"
 require "allure-cucumber"
 World(Helper)
 
+BROWSER = ENV["BROWSER"]
 #variaveis de browser
-case ENV["BROWSER"]
+case BROWSER
 when "firefox"
   @driver = :selenium
 when "fire_headless"
@@ -23,7 +24,7 @@ Capybara.configure do |config|
   config.default_driver = @driver
   config.app_host = "https://www.cobasi.com.br"
   Capybara.default_max_wait_time = 30
-  Capybara.page.driver.browser.manage.window.maximize
+  # Capybara.page.driver.browser.manage.window.maximize
 end
 
 #bloco de configuração do alurre

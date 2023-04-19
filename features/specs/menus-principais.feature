@@ -1,7 +1,7 @@
 # language: pt
 Funcionalidade: Home
 
-    @servico
+    @servico @teste
     Cenario: Validar o direcionamento do banho e toda
         Dado que eu clique em "Serviços Pet"
         E clico em "Banho e tosa"
