@@ -13,6 +13,9 @@ class CheckoutPage
             when "BOLETO"
                 find("h2", text: "Boleto Bancário").click
                 find("p", text: "Você poderá imprimir para pagamento pelo telefone ou internet.")
+            when "CARTÃO DE CRÉDITO"
+                find("h2", text: "Cartão de crédito").click
+                find("#cardNumber")
         end
     end
 
@@ -32,6 +35,33 @@ class CheckoutPage
                 find("h2", text: "Seu pedido foi realizado com sucesso!")
                 # expect(boleto1.visible?).to be true
                 # expect(boleto2.visible?).to be true
+        end
+    end
+
+    def inserir_numero_cc(numero_cartao)
+        find("#cardNumber").set numero_cartao
+    end
+
+    def inserir_nome_cc(nome_cartao)
+        find("#cardName").set nome_cartao
+    end
+
+    def inserir_cpf_cc(cpf_cartao)
+        find("#cpf").set cpf_cartao
+    end
+
+    def inserir_validade_cc(validade_cartao)
+        find("#validity").set validade_cartao
+    end
+
+    def inserir_cvv_cc(cvv_cartao)
+        find("#cvv").set cvv_cartao
+    end
+
+    def inserir_parcelas_cc(parcelas_cartao)
+        case parcelas_cartao
+        when "1"
+            find("option", text: "1x de").click  
         end
     end
 end
