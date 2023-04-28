@@ -1,5 +1,5 @@
-Dado('que eu clique em {string}') do |string|
-    find("div[data-testid='wrapper-dropdown']").click
+Dado('que eu clique em {string}') do |opcao|
+    @HomePage.menu_cabecalho(opcao)
   end
   
   Dado('clico em {string}') do |string|
