@@ -1,6 +1,7 @@
 # language: pt
 Funcionalidade: Login
 
+  @login
   Cenario: Realizar login com sucesso
     Dado que eu acesse a tela de login
     E acesse a opção email e senha
