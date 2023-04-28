@@ -7,8 +7,12 @@ class HomePage
 
     def menu_cabecalho(opcao)
         case opcao
-        when "Compra Programada"
-            find(:xpath, '//li[contains(@class, "styles__ListLink")]//a[text()="Compra Programada"]').click
+            when "Compra Programada"
+                find(:xpath, '//li[contains(@class, "styles__ListLink")]//a[text()="Compra Programada"]').click
+            when "Espaço Pet"
+                find(:xpath, '//li[contains(@class, "styles__ListLink")]//a[text()="Espaço Pet"]').click
+            when "Serviços Pet"
+                find("div[data-testid='wrapper-dropdown']").click
         end
     end
 

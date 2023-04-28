@@ -10,6 +10,7 @@ Before do
   @PdpPage = PdpPage.new
   @CarrinhoPage = CarrinhoPage.new
   @CheckoutPage = CheckoutPage.new
+  @CadastroPet = CadastroPet.new
   find("#adopt-accept-all-button").click
   page.current_window.resize_to(1440, 900)
 end
