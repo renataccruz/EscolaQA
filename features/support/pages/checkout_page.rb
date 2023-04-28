@@ -10,9 +10,11 @@ class CheckoutPage
             when "PIX"
                 find("h2", text: "Pix").click
                 find("strong", text: "O código Pix expira em 10 minutos.")
+
             when "BOLETO"
                 find("h2", text: "Boleto Bancário").click
                 find("p", text: "Você poderá imprimir para pagamento pelo telefone ou internet.")
+            
             when "CARTÃO DE CRÉDITO"
                 find("h2", text: "Cartão de crédito").click
                 find("#cardNumber")
@@ -28,13 +30,13 @@ class CheckoutPage
             when "PIX"
                 find("span", text: "Pagar com Pix")
                 find("span", text: "Copiar código Pix")
-                # expect(pix1.visible?).to be true
-                # expect(pix2.visible?).to be true
+
             when "BOLETO"
                 find("h2", text: "Pedido n° ")
                 find("h2", text: "Seu pedido foi realizado com sucesso!")
-                # expect(boleto1.visible?).to be true
-                # expect(boleto2.visible?).to be true
+
+            when "CARTÃO DE CRÉDITO"
+                find("h2", text: "Ops...")
         end
     end
 
